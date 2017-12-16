@@ -50,14 +50,14 @@
 <body>
 	
 	<div id="header">
-		<nav class="navbar navbar-light bg-light">	 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">	 
 			<div class="container">	
 				{% if page.categories.first != 'home' %}					
 				<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
 				<a class="navbar-brand" href="/">springer lab</a>
 				{% endif %}
 					
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav ml-auto">
 					{% if page.categories.first == 'blog' %}
 					<li class="nav-item active">
 					{% else %}
@@ -96,7 +96,7 @@
 	</div>
 	
 	<div id="footer">
-		<nav class="navbar fixed-bottom navbar-light bg-light">
+		<nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
 			<ul class="navbar-nav mr-auto">
 				{% for page in site.categories.misc %}
 				<li class="footernav">
