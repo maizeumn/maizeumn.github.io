@@ -5,9 +5,9 @@ url: https://maizeumn.github.io
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
+
 sass:
-        style: compressed
-        sass_dir: css
+  style: :compressed 
 
 exclude:
   - "*.class"

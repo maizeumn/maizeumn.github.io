@@ -3,10 +3,8 @@ source 'https://rubygems.org'
 # jekyll
 gem "jekyll"
 gem "kramdown"
-
-# compiling less
-gem 'therubyracer'
-gem 'less'
+gem "execjs"
+gem "therubyracer"
 
 # minifying
 gem 'jekyll-press'
