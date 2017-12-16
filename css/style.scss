@@ -22,7 +22,8 @@ $pre-bg: #f8f8f8;
 $nav-pills-active-link-hover-color: gray(600);
 
 @import "font-awesome/font-awesome";
-/*$fa-font-path: "../css/font";*/
+@import "font-awesome/variables";
+$fa-font-path: "../css/font";
 
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
