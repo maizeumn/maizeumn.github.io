@@ -51,7 +51,7 @@
 	
 	<div id="header">
 		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 				{% if page.categories.first != 'home' %}					
 				<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
 				<a class="navbar-brand" href="/">SpringerLab</a>
@@ -62,7 +62,7 @@
 				</button>
 			
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav ml-auto">
 						{% if page.categories.first == 'blog' %}
 						<li class="nav-item active">
 						{% else %}
