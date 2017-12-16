@@ -50,16 +50,15 @@
 <body>
 	
 	<div id="header">
-		<div class="container">
-			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-				{% if page.categories.first != 'home' %}					
-				<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
-				<a class="navbar-brand" href="/">SpringerLab</a>
-				{% endif %}
-			
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			{% if page.categories.first != 'home' %}					
+			<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+			<a class="navbar-brand" href="/">SpringerLab</a>
+			{% endif %}
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 			
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
@@ -91,8 +90,7 @@
 						<a href="/team/">team</a></li>	  	  
 					</ul>
 				</div>
-			</nav>
-		</div>
+		</nav>
 	</div>
 	
 	<div class="container">	
