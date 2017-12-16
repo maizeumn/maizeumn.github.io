@@ -16,7 +16,7 @@ $pre-bg: #f8f8f8;
 $nav-pills-active-link-hover-color: gray(600);
 
 @import "font-awesome/font-awesome";
-/*@import "font-awesome/variables";*/
+@import "font-awesome/variables";
 $fa-font-path: "font";
 
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
