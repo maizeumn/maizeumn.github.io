@@ -58,39 +58,34 @@
 					<a class="navbar-brand" href="/">springer lab</a>
 					{% endif %}
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						{% if page.categories.first == 'blog' %}
-						<li class="active">
-						{% else %}
-						<li>
-						{% endif %}
-						<a href="/blog/">blog</a>
-						</li>
-						{% if page.categories.first == 'papers' %}
-						<li class="active">
-						{% else %}
-						<li>
-						{% endif %}
-						<a href="/papers/">papers</a>
-						</li>
-						{% if page.categories.first == 'projects' %}
-						<li class="active">
-						{% else %}
-						<li>
-						{% endif %}
-						<a href="/projects/">projects</a></li>	  
-						{% if page.categories.first == 'team' %}
-						<li class="active">
-						{% else %}
-						<li>
-						{% endif %}
-						<a href="/team/">team</a></li>	  	  
-					</ul>
-				</div>
+				<ul class="navbar-nav mr-auto">
+				{% if page.categories.first == 'blog' %}
+				<li class="active">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/blog/">blog</a>
+				</li>
+				{% if page.categories.first == 'papers' %}
+				<li class="active">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/papers/">papers</a>
+				</li>
+				{% if page.categories.first == 'projects' %}
+				<li class="active">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/projects/">projects</a></li>	  
+				{% if page.categories.first == 'team' %}
+				<li class="active">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/team/">team</a></li>	  	  
+			</ul>
 			</div>
 		</nav>	
 	</div>
@@ -103,26 +98,19 @@
 	
 	<div id="footer">
 		<nav class="navbar fixed-bottom navbar-light bg-light">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						{% for page in site.categories.misc %}
-						<li class="footernav">
-							<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
-						</li>
-						{% endfor %}
-						<li class="footernav">
-							<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
-						</li>
-						<li class="footernav">
-							<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<ul class="navbar-nav mr-auto">
+				{% for page in site.categories.misc %}
+				<li class="footernav">
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url }}">{{ page.title }}</a>
+				</li>
+				{% endfor %}
+				<li class="footernav">
+					<i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
+				</li>
+				<li class="footernav">
+					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
+				</li>
+			</ul>
 		</nav>	
 	</div>
 		
