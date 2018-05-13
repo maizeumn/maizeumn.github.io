@@ -67,3 +67,101 @@ h6 {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+/* headings */
+
+.bigtitle {
+	font-size: 60px;
+	line-height: 55px;
+	font-weight: 100;
+	/* Museo */
+}
+
+.title {
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 100;
+	/* Museo */
+}
+
+.bighead {
+	font-size: 32px;
+	font-weight: 300;
+	line-height:36px;
+	/* Museo */
+}
+
+.head {
+	font-size: 24px;
+	font-weight: 300;
+	line-height:30px;
+	/* Museo */
+}
+
+.smallhead {
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 23px;
+	/* Museo */
+}
+
+.note {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+	/* Museo */
+}
+
+.smallnote {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 16px;
+	/* Museo */
+}
+
+.text-gray {
+	color: gray(200);
+}
+
+.text-dark-gray {
+	color: gray(800);
+}
+
+/* other */
+
+body {
+	font-weight: 300;
+}
+
+p {
+	font-weight: 300;
+}
+
+.hugespacer {
+	height: 50px;
+}
+
+.bigspacer {
+	height: 20px;
+}
+
+.spacer {
+	height: 10px;
+}
+
+.smallspacer {
+	height: 5px;
+}
+
+a.off {
+	color: inherit;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
+}
