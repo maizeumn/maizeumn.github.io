@@ -32,6 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         {% if page.categories.first != 'home' %}
+        <object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
         <a class="navbar-brand" href="/">Springer Lab</a>
         {% endif %}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,8 +99,9 @@
     <!-- Footer -->
     <footer class="page-footer bg-light">
       <div class="footer-copyright py-3 text-center">
-        <small>© 2018 Copyright: <a href="https://maizeumn.github.io/"> SpringerLab </a></small>
-        <small class="grey-text">Website made by Peng Zhou</small>
+        <small>© 2018 Copyright: 
+        <a href="https://maizeumn.github.io/"> SpringerLab </a>
+        | Website made by Peng Zhou</small>
       </div>
       <!-- /.container -->
     </footer>
