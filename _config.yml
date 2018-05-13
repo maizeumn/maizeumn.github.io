@@ -7,6 +7,7 @@ permalink: /:categories/:title/
 future: true
 
 sass:
+  sass_dir: ./_sass
   style: :compressed 
 
 exclude:
@@ -41,11 +42,3 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 
-projects:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT
-  - trvrb/divergence
-  - trvrb/ancestry
-  - blab/mitii
-  - blab/mers-structure

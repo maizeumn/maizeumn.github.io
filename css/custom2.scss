@@ -17,7 +17,7 @@ $navbar-light-active-color: gray(600);
 
 @import "font-awesome/font-awesome";
 @import "font-awesome/variables";
-$fa-font-path: "font";
+$fa-font-path: "css/webfonts";
 
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
