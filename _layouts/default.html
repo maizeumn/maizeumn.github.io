@@ -75,7 +75,7 @@
             {% endif %}
               <a class="nav-link" href="/publications/">Publications</a>
             </li>
-			{% if ['protocols', 'positions', 'contactus'].include?(page.categories.first) %}
+			{% if page.categories.first == 'protocols' %}
             <li class="nav-item dropdown active">
             {% else %}
             <li class="nav-item dropdown">
