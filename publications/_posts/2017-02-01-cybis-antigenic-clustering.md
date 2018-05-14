@@ -1,12 +1,12 @@
 ---
-layout: paper
+layout: publication
 title: "Bayesian nonparametric clustering in phylogenetics: modeling antigenic evolution in influenza"
-image: /images/papers/cybis-antigenic-clustering.png
+image: /images/publication/cybis-antigenic-clustering.png
 authors: Cybis GB, Sinsheimer JS, Bedford T, Rambaut A, Lemey P, Suchard MA.
 year: 2017
 ref: Cybis et al. 2017. Stat Med.
 journal: "Stat Med 10.1002/sim.7196."
-pdf: /pdfs/papers/cybis-antigenic-clustering.pdf
+pdf: /pdfs/publication/cybis-antigenic-clustering.pdf
 doi: 10.1002/sim.7196
 ---
 

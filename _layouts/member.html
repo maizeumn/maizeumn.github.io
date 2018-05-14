@@ -8,10 +8,10 @@ layout: default
 	<div class="col-md-12">
 		<div class="media">
 			{% if member.image %}
-			<img class="pull-left pad-right media-object" width=120 src="{{ member.image }}">
+			<img class="pull-left mr-3" width=120 src="{{ member.image }}">
 			{% endif %}
-			<div class="media-body titlebox">
-				<div class="bigtitle media-heading">
+			<div class="media-body">
+				<div class="bigtitle">
 					{{ member.title }}
 				</div>
 				<p>
@@ -68,6 +68,17 @@ layout: default
 			<div class="smallspacer"></div>
 			<i class="fab fa-google fa-fw"></i>
 			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+        {% if member.linkedin %}
+		<div class="smallhead">
+			Linkedin
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fab fa-linkedin-in fa-fw"></i>
+			<a class="off" href="https://www.linkedin.com/in/{{ member.linkedin }}">{{ member.title }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
