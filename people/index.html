@@ -13,8 +13,8 @@ categories:
 </div>
 <div class="bigspacer"></div>
 
-{% assign current_members = site.categories.people | where:"alumni", "true" %}
-{% assign pastt_members = site.categories.people | where:"alumni", "false" %}
+{% assign current_members = site.categories.people | where:"alumni", "false" %}
+{% assign pastt_members = site.categories.people | where:"alumni", "true" %}
 
 {% for member in current_members reversed %}
     {% assign loopindex = forloop.index | modulo: 3 %}
