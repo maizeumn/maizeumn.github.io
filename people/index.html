@@ -13,6 +13,8 @@ categories:
 </div>
 <div class="bigspacer"></div>
 
+{% assign current_members = "" | split,"" %}
+{% assign past_members = "" | split,"" %}
 {% for member in site.categories.people %}
     {% if member.alumni == true %}
         {% assign current_members = current_members | push:member %}
