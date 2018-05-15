@@ -6,21 +6,21 @@ categories:
 ---
 
 <div class="row">
-	<div class="col-md-auto">
-			<ul class="nav nav-pills nav-fill note">
-				<li class="nav-item">
-					<a class="nav-link" href="/news/">
-						<i class="fas fa-sync fa-fw"></i> Timeline
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="/news/archive/">
-						<i class="fas fa-list-ul fa-fw"></i> Index
-					</a>
-				</li>
-			</ul>
-		<div class="bigspacer"></div>
+	<div class="col-md-12">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="/news/">
+                    <i class="fas fa-file fa-fw"></i> Detail view
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/news/archive/">
+                    <i class="fas fa-list-ul fa-fw"></i> List view
+                </a>
+            </li>
+        </ul>
 	</div>
+	<div class="bigspacer"></div>
 </div>
 
 {% for post in site.categories.news %}

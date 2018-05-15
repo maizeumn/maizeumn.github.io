@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Tara Enders
-position: Post-doctoral Associate
+position: Postdoc
 email: tenders@umn.edu
 handle: taraenders
 image: /images/people/tara-enders.png

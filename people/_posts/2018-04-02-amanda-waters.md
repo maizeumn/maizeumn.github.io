@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Amanda Waters
-position: Graduate Student
+position: PhD Student
 handle: mandy
 email: water157@umn.edu
 image: /images/people/mandy.jpg
