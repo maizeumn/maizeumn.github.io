@@ -157,3 +157,33 @@ pre code {
     overflow-wrap: normal;
     white-space: pre;
 }
+
+.postbox {
+	min-height: 80px;
+}
+
+.paperbox {
+	min-height: 140px;
+}
+
+.projectbox {
+	min-height: 120px;
+}
+
+.memberbox {
+
+}
+
+.talkbox {
+	min-height: 100px;
+}
+
+.titlebox {
+	min-width: 300px;
+}
+
+.handlebox {
+	height: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}

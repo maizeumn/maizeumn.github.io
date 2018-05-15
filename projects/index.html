@@ -4,63 +4,40 @@ title: Springer Lab / Projects
 categories: 
  - projects
 ---
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
 
-{% for post in site.categories.projects limit: 8 %}
+{% for project in site.categories.projects %}
 
 	{% for member in site.categories.people %}
-		{% if member.title == post.author %}
+		{% if member.title == project.author %}
 			{% assign author = member %}
 		{% endif %}
 	{% endfor %}
 
-	<div class="blog-post">
-		<div class="row">
-			<div class="col-md-1"></div>	
-			<div class="col-md-10">
-				<div class="media">
-					<div class="media-body">
-						<div class="title media-heading">
-							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
-						</div>
-						<p>
-						<div class="smallhead">
-							{{ post.date | date: "%-d %b %Y" }}
-							{% if author %}
-							by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
-							{% endif %}		
-						</div>
-					</div>
-				</div>
+    {% assign loopindex = forloop.index | modulo: 3 %}
+    {% if loopindex == 1 or forloop.first %}
+        <div class="row">
+    {% endif %}
+		<div class="col-md-4 projectbox">
+			<div class="head">
+				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+			</div>	
+			<div class="smallspacer"></div>
+			<div class="note">
+				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
 			</div>
-			<div class="col-md-1"></div>					
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				{% endif %}		
+			</div>
 		</div>
-
+    {% if loopindex == 0 or forloop.last %}
+        </div>
 		<div class="bigspacer"></div>
-
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">	
-				{% if post.image %}
-				{% if post.link %}
-				<a href="{{ post.link }}">
-					<img class="offset" src="{{ post.image }}">
-				</a>			
-				{% else %}
-				<img class="offset" src="{{ post.image }}">
-				{% endif %}				
-				{% endif %}
-				<div class="post">
-					{{ post.content }}
-				</div>	
-			</div>			
-			<div class="col-md-1"></div>
-		</div>
-	
-		<div class="bigspacer"></div>
-		<div class="spacer"></div>	
-
-	</div>
-
+		<div class="spacer"></div>
+    {% endif %}
+    
 {% endfor %}
-
-</div>

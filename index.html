@@ -49,14 +49,18 @@ categories:
 
 <div class="row">
 	<div class="col-md-12">
-		<div class="smallhead">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-      </p>
-		</div>
+        <p class="smallhead">The Springer lab studies basic aspects of genetics using maize as a model system.  We are involved in a number of projects to better understand the molecular sources of variation within a species and to connect this heritable variation with changes in phenotype. </p>
+        <p class="smallhead">Epigenomic variation in maize</p>
+        <p>Geneticists study the basis of heritable variation within species.  Most heritable differences can be attributed to sequence differences among different individuals that segregate in Mendelian fashion.  However, there is also evidence for heritable variation that cannot be attributed to sequence variation.  This epigenetic variation can be encoded by differences in the modifications to DNA or histones.  One well-characterized example is DNA methylation.  In most cases, DNA methylation is correlated with reduced gene expression or activity levels for a particular region of the genome.  It is important to understand the relative contribution and role of epigenetic variation to understand how information is passed from parents to off-spring.</p>
+        <p>Matthew Vaughn (University of Texas at Austin) and I have a National Science Foundation Plant Genome Program grant to study epigenomic variation in maize.  We are comparing the genomic distribution of several chromatin modifications in a variety of maize genotypes.  Further information on this project can be found on the Maize epigenomic variation project website.</p>
+        <p class="smallhead">Genome-transposon dynamics</p>
+        <p>The genome of many plant species is a mosaic of genes and repetitive elements.  Most of these repetitive elements are derived from different types of transposable elements.  The exact types and locations of transposons present in genomes varies widely between species and even between individuals of the same species.  Genomes have developed a variety of mechanisms to suppress transposon movement and to mitigate the influence of transposon on genes.  Maize provides a good system for studying how transposons and genes interact.  Over 80% of the maize genome is derived from transposons and most genes have transposons located very nearby.  We are studying how the genome uses chromatin modifications to separate genes and transposons.  In addition, we are attempting to determine how transposons might create new regulatory information that can influence expression of genes.</p>
+        <p class="smallhead">Evolution of gene expression responses</p>
+        <p>Plants are sessile organisms that must respond to environmental changes in order to survive.  In order to produce enough food for a growing population in a changing climate it will be important for scientists to understand the mechanisms that plants use to tolerate abiotic stress.  Changes in gene expression levels are one mechanism that plants use to respond to environmental stress.  We are studying natural variation in responses to abiotic stress to probe the evolution and mechanisms of gene expression responses to abiotic stress.  We seek to understand how genes acquire, or lose, specific gene expression responses.  By understanding how certain alleles respond to environmental stress we might be able to engineer plants with improved responses to environmental stresses such as extreme temperatures or drought.</p>
+        <p class='smallhead'>Environmentally induced epigenetic variation</p>
+        <p>One particularly intriguing aspect of epigenetic variation is the potential for instability in the system.  While genetic variation is generally stable and has quite predictable patterns of inheritance, epigenetic variation can be quite unstable and may be influenced by environmental differences.  This creates the potential for the environment to affect information that may be passed on to off-spring.  We have studied DNA methylation patterns in plants subjected to environmental stress and tissue culture (in collaboration with Shawn Kaeppler at the University of Wisconsin-Madison).  We found little evidence for changes in DNA methylation in most conditions but did find a number of genomic regions with altered DNA methylation following tissue culture. </p>
+        <p class="smallhead">Integrative genomics in maize</p>
+        <p>Genomic studies have the potential to characterize differences in sequence or gene expression across the whole genome.  There is great potential to harness genomic datasets to develop models to explain and predict phenotypic variation.  In collaboration with Chad Myers (University of Minnesota) we have been developing co-expression networks based on gene expression profiles of different genotypes or developmental stages.  Our goal is to develop models that integrate gene expression profiles and genetic variation data to explain phenotypic differences.  This project will develop computation resources to assist with the characterization of QTL and breeding efforts for a variety of traits.</p>
 	</div>
 </div>
 
@@ -72,9 +76,9 @@ categories:
 </div>
 
 <div class="row">
-	{% for post in site.categories.blog limit:4 %}
+	{% for post in site.categories.news limit:4 %}
 
-	{% for member in site.categories.team %}
+	{% for member in site.categories.people %}
 		{% if member.title == post.author %}
 			{% assign author = member %}
 		{% endif %}
@@ -83,7 +87,7 @@ categories:
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
+				<i class="fas fa-comment fa-fw"></i>
 				<a class="off" href="{{ post.url }}">
 				{{ post.title }}
 				</a>
@@ -114,11 +118,11 @@ categories:
 </div>
 
 <div class="row">
-	{% for paper in site.categories.papers limit:4 %}
+	{% for paper in site.categories.publications limit:4 %}
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
+				<i class="fas fa-file fa-fw"></i>
 				<a class="off" href="{{ paper.url }}">
 				{{ paper.title }}
 				</a>
@@ -146,11 +150,11 @@ categories:
 </div>
 
 <div class="row">
-	{% for project in site.data.projects limit:4 %}
+	{% for project in site.categories.projects limit:4 %}
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
+				<i class="fas fa-edit fa-fw"></i>
 				<a class="off" href="{{ project.url }}">
 				{{ project.title }} - {{ project.description }}
 				</a>
