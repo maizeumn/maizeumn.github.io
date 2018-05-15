@@ -17,9 +17,9 @@ categories:
 {% assign past_members = "" | split,"" %}
 {% for member in site.categories.people %}
     {% if member.alumni == true %}
-        {% assign current_members = current_members | push:member %}
-    {% else %}
         {% assign past_members = past_members | push:member %}
+    {% else %}
+        {% assign current_members = current_members | push:member %}
     {% endif %}
 {% endfor %}
 
