@@ -13,13 +13,15 @@ categories:
 </div>
 <div class="bigspacer"></div>
 
-{% for member in site.categories.people reversed %}
-	{% if member.alumni != true %}
+{% assign current_members = site.categories.people | where:"alumni", "true" %}
+{% assign pastt_members = site.categories.people | where:"alumni", "false" %}
+
+{% for member in current_members reversed %}
     {% assign loopindex = forloop.index | modulo: 3 %}
-    {% if loopindex == 0 or forloop.first %}
+    {% if loopindex == 1 or forloop.first %}
         <div class="row">
     {% endif %}
-		<div class="col-md-4">
+	<div class="col-md-4">
 			<div class="media">
   				<a class="pull-left" href="{{ member.url }}">
     				<img width=160 class="mr-3" src="{{ member.image }}">
@@ -30,11 +32,10 @@ categories:
   				</div>
 			</div>
         </div>
-    {% if loopindex == 2 or forloop.last %}
+    {% if loopindex == 0 or forloop.last %}
         </div>
 		<div class="bigspacer"></div>
 		<div class="bigspacer"></div>
-    {% endif %}
     {% endif %}
 {% endfor %}
 
@@ -45,13 +46,12 @@ categories:
 </div>
 <div class="bigspacer"></div>
 
-{% for member in site.categories.people reversed %}
-	{% if member.alumni == true %}
+{% for member in past_members reversed %}
     {% assign loopindex = forloop.index | modulo: 3 %}
-    {% if loopindex == 0 or forloop.first %}
+    {% if loopindex == 1 or forloop.first %}
         <div class="row">
     {% endif %}
-		<div class="col-md-4 memberbox">
+	<div class="col-md-4 memberbox">
 			<div class="media">
   				<!--
   				<a class="pull-left" href="{{ member.url }}">
@@ -65,8 +65,7 @@ categories:
 			</div>
 			<div class="bigspacer"></div>
         </div>
-    {% if loopindex == 2 or forloop.last %}
+    {% if loopindex == 0 or forloop.last %}
         </div>
-    {% endif %}
     {% endif %}
 {% endfor %}
