@@ -21,16 +21,16 @@ categories:
     {% endif %}
 		<div class="col-md-4 projectbox">
 			<div class="head">
-				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+				<a href="{{ project.url }}" class="text-dark">{{ project.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+				<a href="{{ project.url }}" class="text-muted">{{ project.description }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					by <a class="text-secondary" href="{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}		
 			</div>
 		</div>
