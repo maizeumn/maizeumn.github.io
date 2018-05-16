@@ -3,16 +3,6 @@
 
 @import "bootstrap/bootstrap";
 
-body {
-  padding-top: 54px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
 h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
