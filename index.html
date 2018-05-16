@@ -88,7 +88,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fas fa-comment fa-fw"></i>
-				<a class="off" href="{{ post.url }}">
+				<a class="text-dark" href="{{ post.url }}">
 				{{ post.title }}
 				</a>
 			</div>
@@ -97,7 +97,7 @@ categories:
 				Posted
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="text-secondary" href="{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}
 			</div>
 			<div class="bigspacer"></div>
@@ -123,7 +123,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fas fa-file fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">
+				<a class="text-dark" href="{{ paper.url }}">
 				{{ paper.title }}
 				</a>
 			</div>
@@ -155,19 +155,15 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fas fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
+				<a class="text-dark" href="{{ project.url }}">
 				{{ project.title }} - {{ project.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">
-				{{ project.commits.first.author_login }}
+				Updated by
+				<a class="text-secondary" href="{{ project.url }}">
+				{{ project.author }}
 				</a>
 			</div>
 			<div class="bigspacer"></div>

@@ -4,7 +4,7 @@ title: Tara Enders
 position: Postdoc
 email: tenders@umn.edu
 handle: taraenders
-image: /images/people/tara-enders.png
+image: /images/people/tara-enders.jpg
 cv: /pdfs/people/tara-enders-cv.pdf
 ---
 

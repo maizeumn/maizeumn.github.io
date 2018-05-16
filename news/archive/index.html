@@ -7,14 +7,14 @@ categories:
 
 <div class="row">
 	<div class="col-md-12">
-        <ul class="nav nav-pills justify-content-center">
+        <ul class="nav nav-pills-light justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="/news/">
+                <a class="nav-link active" href="/news/">
                     <i class="fas fa-file fa-fw"></i> Detail view
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/news/archive/">
+                <a class="nav-link" href="/news/archive/">
                     <i class="fas fa-list-ul fa-fw"></i> List view
                 </a>
             </li>
@@ -37,13 +37,13 @@ categories:
     {% endif %}
 		<div class="col-md-4 postbox">
 			<div class="smallhead">
-				<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+				<a href="{{ post.url }}" class="text-dark">{{ post.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ post.date | date: "%-d %b %Y" }}
 				{% if author %}
-				by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+				by <a class="text-muted" href="{{ author.url }}">{{ author.handle }}</a>
 				{% endif %}	
 			</div>
 			<div class="bigspacer"></div>
