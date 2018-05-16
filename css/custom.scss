@@ -54,7 +54,16 @@ h6 {
 }
 
 .navbar {
-	font-weight: 300;
+    height: 60px !important; /*i assume your navbar size 100px*/
+}
+.navbar-brand {
+	font-size: 25px;
+	font-weight: 100;
+	/* Museo */
+}
+.navbar-nav {
+	font-size: 25px;
+	font-weight: 100;
 	/* Museo */
 }
 
