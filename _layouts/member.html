@@ -24,17 +24,6 @@ layout: default
 
 <div class="row">
 	<div class="col-md-3">
-		{% if member.cv %}
-		<div class="smallhead">
-			CV
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fas fa-file-alt fa-fw"></i>
-			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
 		{% if member.twitter %}
 		<div class="smallhead">
 			Twitter
@@ -43,6 +32,17 @@ layout: default
 			<div class="smallspacer"></div>
 			<i class="fab fa-twitter fa-fw"></i>
 			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.orcid %}
+		<div class="smallhead">
+			ORCID
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="ai ai-orcid ai-fw"></i>
+			<a class="off" href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
@@ -63,7 +63,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fab fa-google fa-fw"></i>
+			<i class="ai ai-google-scholar ai-fw"></i>
 			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -99,6 +99,17 @@ layout: default
 			<div class="smallspacer"></div>
 			<i class="fas fa-envelope fa-fw"></i>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.cv %}
+		<div class="smallhead">
+			CV
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="ai ai-cv ai-fw"></i>
+			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}

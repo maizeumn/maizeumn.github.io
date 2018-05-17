@@ -6,9 +6,16 @@ categories:
 ---
 
 <div class="bigspacer"></div>
-<div class="row justify-content-md-center">
+<div class="row justify-content-center">
 	<div class="col-md-auto">
-		<p class='title'>Current members</p>
+        <div class="btn-group">
+            <a href="/people/" class="btn btn-light active" role="button">
+                Current Members
+            </a>
+            <a href="/people/archive" class="btn btn-light" role="button">
+                Past Members
+            </a>
+        </div>
 	</div>
 </div>
 <div class="bigspacer"></div>
@@ -41,14 +48,14 @@ categories:
     				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
     				<h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
 		
-		{% if member.cv %}
-			<a title="CV" class='text-dark' href="{{ member.cv }}">
-			    <i class="fas fa-file-alt fa-fw"></i>
-			</a>
-		{% endif %}
 		{% if member.twitter %}
 			<a title="Twitter" class='text-dark' href="https://twitter.com/{{ member.twitter }}">
 			    <i class="fab fa-twitter fa-fw"></i>
+			</a>
+		{% endif %}
+		{% if member.orcid %}
+			<a title="ORCID" class='text-dark' href="{{ member.orcid }}">
+			    <i class="ai ai-orcid ai-fw"></i>
 			</a>
 		{% endif %}
 		{% if member.github %}
@@ -58,7 +65,7 @@ categories:
 		{% endif %}
 		{% if member.scholar %}
 			<a title="Google Scholar" class='text-dark' href="http://scholar.google.com/citations?user={{ member.scholar }}">
-			    <i class="fab fa-google fa-fw"></i>
+			    <i class="ai ai-google-scholar fa-fw"></i>
 			</a>
 		{% endif %}
         {% if member.linkedin %}
@@ -77,6 +84,11 @@ categories:
 			    <i class="fas fa-envelope fa-fw"></i>
 			</a>
 		{% endif %}
+		{% if member.cv %}
+			<a title="CV" class='text-dark' href="{{ member.cv }}">
+			    <i class="ai ai-cv ai-fw"></i>
+			</a>
+		{% endif %}
     				
   				</div>
 			</div>
@@ -85,31 +97,5 @@ categories:
         </div>
 		<div class="bigspacer"></div>
 		<div class="bigspacer"></div>
-    {% endif %}
-{% endfor %}
-
-<div class="row justify-content-md-center">
-	<div class="col-md-auto">
-		<p class='title'>Past members</p>
-	</div>
-</div>
-<div class="bigspacer"></div>
-
-{% for member in past_members reversed %}
-    {% assign loopindex = forloop.index | modulo: 3 %}
-    {% if loopindex == 1 or forloop.first %}
-        <div class="row">
-    {% endif %}
-	<div class="col-md-4">
-	        <div class="card" style="width: 250px;">
-			    <div class="card-body">
-    				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
-    				<h6 class="card-subtitle mb-1 text-muted">{{ member.position }}</h6>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-        </div>
-    {% if loopindex == 0 or forloop.last %}
-        </div>
     {% endif %}
 {% endfor %}
