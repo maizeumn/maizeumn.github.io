@@ -8,7 +8,7 @@ categories:
 <div class="bigspacer"></div>
 <div class="row justify-content-md-center">
 	<div class="col-md-auto">
-		<div class='title'>Current members</div>
+		<p class='title'>Current members</p>
 	</div>
 </div>
 <div class="bigspacer"></div>
@@ -29,13 +29,37 @@ categories:
         <div class="row">
     {% endif %}
 	<div class="col-md-4">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="mr-3" src="{{ member.image }}">
+			<div class="card" style="width: 250px;">
+  				<a href="{{ member.url }}">
+    				<img class="card-img-top" src="{{ member.image }}">
   				</a>
- 			 	<div class="media-body">
-    				<div class="mt-0 smallhead"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></div>
-    				<p class="note text-muted">{{ member.position }}</p>
+ 			 	<div class="card-body">
+    				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
+    				<h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
+		
+		{% if member.cv %}
+			<a title="CV" class='text-dark' href="{{ member.cv }}"><i class="fas fa-file-alt fa-fw"></i></a>
+		{% endif %}
+		{% if member.twitter %}
+			<a title="Twitter" class='text-dark' href="https://twitter.com/{{ member.twitter }}"><i class="fab fa-twitter fa-fw"></i></a>
+		{% endif %}
+		{% if member.github %}
+			<a title="Github" class='text-dark' href="https://github.com/{{ member.github }}"><i class="fab fa-github fa-fw"></i></a>
+		{% endif %}
+		{% if member.scholar %}
+			<a title="Google Scholar" class='text-dark' href="http://scholar.google.com/citations?user={{ member.scholar }}"><i class="fab fa-google fa-fw"></i></a>
+		{% endif %}
+        {% if member.linkedin %}
+			<a title="Linkedin" class='text-dark' href="https://www.linkedin.com/in/{{ member.linkedin }}"><i class="fab fa-linkedin-in fa-fw"></i></a>
+		{% endif %}
+		{% if member.calendar %}
+			<a title='Calendar' class='text-dark' href="{{ member.calendar }}"><i class="fas fa-calendar-alt fa-fw"></i></a>
+		{% endif %}
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+			<a title='Email' class='text-dark' href="mailto:{{ member.email }}"><i class="fas fa-inbox fa-fw"></i></a>
+		{% endif %}    				
+    				
   				</div>
 			</div>
         </div>
@@ -48,7 +72,7 @@ categories:
 
 <div class="row justify-content-md-center">
 	<div class="col-md-auto">
-		<div class='title'>Past members</div>
+		<p class='title'>Past members</p>
 	</div>
 </div>
 <div class="bigspacer"></div>
@@ -58,16 +82,11 @@ categories:
     {% if loopindex == 1 or forloop.first %}
         <div class="row">
     {% endif %}
-	<div class="col-md-4 memberbox">
-			<div class="media">
-  				<!--
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
-  				-->
- 			 	<div class="media-body">
-    				<div class="mt-0 smallhead"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></div>
-    				<p class="note text-muted">{{ member.position }}</p>
+	<div class="col-md-4">
+	        <div class="card" style="width: 250px;">
+			    <div class="card-body">
+    				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
+    				<h6 class="card-subtitle mb-1 text-muted">{{ member.position }}</h6>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
