@@ -5,7 +5,7 @@ categories:
  - projects
 ---
 <div class="bigspacer"></div>
-<div class="bigspacer"></div>
+
 
 {% for project in site.categories.projects %}
 
@@ -19,25 +19,27 @@ categories:
     {% if loopindex == 1 or forloop.first %}
         <div class="row">
     {% endif %}
-		<div class="col-md-4 projectbox">
-			<div class="head">
-				<a href="{{ project.url }}" class="text-dark">{{ project.title }}</a>
-			</div>	
-			<div class="smallspacer"></div>
-			<div class="note">
-				<a href="{{ project.url }}" class="text-muted">{{ project.description }}</a>
+	    <div class="col-md-4">
+			<div class="card" style="width: 250px;">
+                <a href="{{ project.url }}">
+                    {% if project.image %}
+                        <img class="card-img-top" src="{{ project.image }}">
+                    {% else %}
+                        <img class="card-img-top" src="/images/null.png">
+                    {% endif %}
+                </a>
+ 			 	<div class="card-body">
+    				<div class="card-title head"><a href="{{ project.url }}" class="text-dark">{{ project.title }}</a></div>
+    				<div class="card-subtitle mb-2 text-muted note">{{ project.description }}</div> 
+                    {% if author %}
+                        <div>by <a class="text-muted note" href="{{ author.url }}">{{ author.title }}</a></div>
+                    {% endif %}		
+  				</div>
 			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				{% if author %}
-					by <a class="text-secondary" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}		
-			</div>
-		</div>
+        </div>
     {% if loopindex == 0 or forloop.last %}
         </div>
 		<div class="bigspacer"></div>
-		<div class="spacer"></div>
+		<div class="bigspacer"></div>
     {% endif %}
-    
 {% endfor %}

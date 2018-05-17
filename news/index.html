@@ -5,24 +5,22 @@ categories:
  - news
 category: news
 ---
+<div class="bigspacer"></div>
 
-<div class="row">
-	<div class="col-md-12">
-        <ul class="nav nav-pills-light justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="/news/">
-                    <i class="fas fa-file fa-fw"></i> Detail view
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/news/archive/">
-                    <i class="fas fa-list-ul fa-fw"></i> List view
-                </a>
-            </li>
-        </ul>
+<div class="row justify-content-center">
+	<div class="col-md-auto">
+        <div class="btn-group">
+            <a href="/news/" class="btn btn-light active" role="button">
+                <i class="fas fa-file fa-fw"></i> Detail view
+            </a>
+            <a href="/news/archive/" class="btn btn-light" role="button">
+                <i class="fas fa-list-ul fa-fw"></i> List view
+            </a>
+        </div>
 	</div>
-	<div class="bigspacer"></div>
 </div>
+
+<div class="bigspacer"></div>
 
 <div class="post-list">
 
@@ -85,18 +83,3 @@ category: news
 {% endfor %}
 
 </div>
-
-<div class="infinite-spinner"></div>
-
-<div class="row">
-	<div class="col-md-12">
-			<ul class="nav nav-pills justify-content-center ">
-				<li class="nav-item active">
-					<a href="/news/">
-						<i class="fas fa-chevron-up fa-fw"></i> Back to top
-					</a>
-				</li>				
-			</ul>
-	</div>
-</div>
-

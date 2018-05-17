@@ -8,19 +8,23 @@ categories:
 
 <div class="list-group">
 {% for paper in site.categories.publications %}
+
   <a href="{{ paper.url }}" class="list-group-item list-group-item-action">
       <div class="row">
         <div class="col-sm col-sm-auto pr-0">
                 {% if paper.image %}
-                <img width=100 src="{{ paper.image }}">
+                    <img width=100 src="{{ paper.image }}">
+                {% else %}
+                    <img width=100 src="/images/null.png">
                 {% endif %}
         </div>
-        <div class="col-sm px-2">
+        <div class="col-sm px-3">
             <div class="pull-right smallhead text-dark">{{ paper.title }}</div>
-            <div class="note mb-2 text-muted">{{ paper.ref }}</div>
+            <div class="note my-2 text-muted">{{ paper.ref }}</div>
         </div>
       </div>
   </a>
+
 {% endfor %}
 </div>
 

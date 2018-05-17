@@ -4,52 +4,47 @@ title: Springer Lab / News
 categories: 
  - news
 ---
+<div class="bigspacer"></div>
 
-<div class="row">
-	<div class="col-md-12">
-        <ul class="nav nav-pills-light justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="/news/">
-                    <i class="fas fa-file fa-fw"></i> Detail view
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/news/archive/">
-                    <i class="fas fa-list-ul fa-fw"></i> List view
-                </a>
-            </li>
-        </ul>
+<div class="row justify-content-center">
+	<div class="col-md-auto">
+        <div class="btn-group">
+            <a href="/news/" class="btn btn-light" role="button">
+                <i class="fas fa-file fa-fw"></i> Detail view
+            </a>
+            <a href="/news/archive/" class="btn btn-light active" role="button">
+                <i class="fas fa-list-ul fa-fw"></i> List view
+            </a>
+        </div>
 	</div>
-	<div class="bigspacer"></div>
 </div>
 
-{% for post in site.categories.news %}
+<div class="bigspacer"></div>
 
-	{% for member in site.categories.people %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
+<div class="row">
+	<div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="list-group">
+            {% for post in site.categories.news %}
 
-    {% assign loopindex = forloop.index | modulo: 3 %}
-    {% if loopindex == 0 or forloop.first %}
-        <div class="row">
-    {% endif %}
-		<div class="col-md-4 postbox">
-			<div class="smallhead">
-				<a href="{{ post.url }}" class="text-dark">{{ post.title }}</a>
-			</div>	
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				{{ post.date | date: "%-d %b %Y" }}
-				{% if author %}
-				by <a class="text-muted" href="{{ author.url }}">{{ author.handle }}</a>
-				{% endif %}	
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>		
+                {% for member in site.categories.people %}
+                    {% if member.title == post.author %}
+                        {% assign author = member %}
+                    {% endif %}
+                {% endfor %}
+                <a href="{{ post.url }}" class="list-group-item list-group-item-action">
+                    <div class="smallhead text-dark">{{ post.title }}</div>
+                    <div class="note mt-2 text-muted">
+                        {{ post.date | date: "%-d %b %Y" }}
+                        {% if author %}
+                        by {{ author.handle }}
+                        {% endif %}
+                    </div>
+                </a>
+            {% endfor %}
+            </div>
         </div>
-    {% if loopindex == 2 or forloop.last %}
-        </div>
-    {% endif %}
-{% endfor %}
+	<div class="col-md-1"></div>	  
+</div>
+
+<div class="bigspacer"></div>
