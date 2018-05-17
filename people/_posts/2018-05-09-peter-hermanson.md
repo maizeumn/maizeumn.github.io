@@ -4,6 +4,7 @@ title: Peter Hermanson
 position: Jr Scientist
 handle: peterhermanson
 twitter:
+orcid: 
 calendar: 
 github:
 linkedin:

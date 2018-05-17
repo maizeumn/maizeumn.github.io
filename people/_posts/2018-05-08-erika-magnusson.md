@@ -4,6 +4,7 @@ title: Erika Magnusson
 position: PhD student
 handle: erika
 twitter:
+orcid: 
 calendar: 
 github:
 linkedin:
