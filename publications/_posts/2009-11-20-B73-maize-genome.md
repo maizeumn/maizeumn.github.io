@@ -2,9 +2,9 @@
 layout: publication
 title: "The B73 maize genome: complexity, diversity, and dynamics"
 image: /images/publications/Schnable2009.gif
-authors: Schnable PS, Ware D, Fulton RS
+authors: Schnable PS, Ware D, Fulton RS.
 year: 2009
-ref: 
+ref: Schnable et al. 2009. Science.
 journal: Science
 pdf: /pdfs/publication/Schnable2009.pdf
 doi: 10.1126/science.1178534

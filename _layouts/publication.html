@@ -2,25 +2,24 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="media">
+<div class="card">
+  <div class="row">
+    <div class="col-sm col-sm-auto pr-0">
 			{% if page.image %}
-			<img width=160 class="pull-left pad-right mr-3" src="{{ page.image }}">
+			<img class="card-img-left" width=200 src="{{ page.image }}">
 			{% endif %}
-			<div class="media-body titlebox">
-				<div class="title mt-0">
-					{{ page.title }}
-				</div>
-				<p>
-				<div class="smallhead">
+    </div>
+    <div class="col-sm px-0">
+      <div class="card-body">
+			    <div class="card-title title pull-right">{{ page.title }}</div>
+    			<div class="card-subtitle smallhead mb-2 text-muted">
 					{{ page.authors }}
 					{{ page.year }}.
 					{{ page.journal }}
 				</div>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="bigspacer"></div>
