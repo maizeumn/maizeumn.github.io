@@ -4,22 +4,28 @@ title: Springer Lab / Publications
 categories: 
  - publications
 ---
+<div class="bigspacer"></div>
 
+<div class="list-group">
 {% for paper in site.categories.publications %}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 paperbox">
-			<div class="media">
-  				<a class="pull-right" href="{{ paper.url }}">
-    				<img width=100 class="media-object" src="{{ paper.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="smallhead media-heading"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
-    				<p class="note">{{ paper.ref }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
+
+  <a href="{{ paper.url }}" class="list-group-item list-group-item-action">
+      <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+                {% if paper.image %}
+                    <img width=100 src="{{ paper.image }}">
+                {% else %}
+                    <img width=100 src="/images/null.png">
+                {% endif %}
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+        <div class="col-sm px-3">
+            <div class="pull-right smallhead text-dark">{{ paper.title }}</div>
+            <div class="note my-2 text-muted">{{ paper.ref }}</div>
+        </div>
+      </div>
+  </a>
+
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+</div>
+
+<div class="bigspacer"></div>

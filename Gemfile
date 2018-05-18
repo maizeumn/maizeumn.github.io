@@ -1,14 +1,13 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# jekyll
-gem "jekyll"
-gem "kramdown"
-gem "execjs"
-gem "therubyracer"
+source "https://rubygems.org"
 
-# minifying
-gem 'jekyll-press'
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# octokit
-gem 'octokit'
-gem 'netrc'
+# gem "rails"
+
+# Added at 2018-05-13 10:27:38 -0500 by orion:
+gem "jekyll", "~> 3.8"
+
+# Added at 2018-05-13 10:29:20 -0500 by orion:
+gem "jekyll-press", "~> 0.2.1"

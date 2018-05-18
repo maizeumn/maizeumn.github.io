@@ -42,3 +42,7 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
 
+projects:
+  - trvrb/coaltrace
+  - trvrb/stem
+  - trvrb/PACT

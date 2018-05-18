@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-{% for member in site.categories.team %}
+{% for member in site.categories.people %}
 	{% if member.title == page.author %}
 		{% assign author = member %}
 	{% endif %}
 {% endfor %}
+
+<div class="bigspacer"></div>
 
 <div class="blog-post">
 	<div class="row">
@@ -14,13 +16,13 @@ layout: default
 			<div class="media">
 				<div class="media-body">
 					<div class="title media-heading">
-						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+						<a href="{{ page.url }}" class="text-dark">{{ page.title }}</a>
 					</div>
 					<p>
 					<div class="smallhead">
 						{{ page.date | date: "%-d %b %Y" }}
 						{% if author %}
-						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+						by <a class="text-muted" href="{{ author.url }}">{{ author.handle }}</a>
 						{% endif %}
 					</div>
 				</div>
