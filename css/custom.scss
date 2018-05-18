@@ -1,6 +1,17 @@
-----
-----
+---
+---
+
 @import "bootstrap/bootstrap";
+
+body {
+	padding-top: 60px;
+}
+
+@media (min-width: 992px) {
+	body {
+		padding-top: 60px;
+	}
+}
 
 h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
 h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
@@ -51,7 +62,7 @@ h6 {
 	/* Museo */
 }
 .navbar-nav {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 100;
 	/* Museo */
 }
