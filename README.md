@@ -44,8 +44,8 @@ The `layout`, `title` and `author` tags are required, while `link` and `image` a
 
 ## For more information
 
-* Look over the [metadata format guide](http://maizeumn.github.io/guide/format/)
-* Look over the [Markdown style guide](http://maizeumn.github.io/guide/style/)
+* Look over the [metadata format guide](http://maizeumn.github.io/misc/format/)
+* Look over the [Markdown style guide](http://maizeumn.github.io/misc/style/)
 
 ## License
 

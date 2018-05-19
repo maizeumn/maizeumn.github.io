@@ -2,25 +2,20 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="bigtitle">
-			{{ page.title }}
-		</div>	
-	</div>
-</div>	
-
 <div class="bigspacer"></div>
 
 <div class="row">
-	<div class="col-md-2">
+	<div class="col-md-1">
 	</div>
-	<div class="col-md-8">	
+	<div class="col-md-10">	
+
+        {% include breadcrumbs.html path=page.path title=page.title %}
+
 		<div class="post">
 			{{ content }}
 		</div>	
 	</div>			
-	<div class="col-md-2"></div>
+	<div class="col-md-1"></div>
 </div>	
 
 
