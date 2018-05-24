@@ -7,7 +7,7 @@ year: 2018
 ref: Anderson et al. 2018. G3.
 journal: G3
 pdf: 
-doi: https://doi.org/10.1534/g3.118.200284
+doi: 10.1534/g3.118.200284
 supplement: 
 ---
 
