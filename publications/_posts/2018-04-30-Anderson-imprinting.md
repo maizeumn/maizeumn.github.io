@@ -7,7 +7,7 @@ year: 2018
 ref: Anderson and Springer 2018. Current Opinion in Genetics & Development.
 journal: Current Opinion in Genetics & Development
 pdf: 
-doi: https://doi.org/10.1016/j.gde.2018.01.008
+doi: 10.1016/j.gde.2018.01.008
 supplement: 
 ---
 
