@@ -13,3 +13,5 @@ scholar: Jaclyn Noshay
 image: /images/people/jaclyn-noshay.jpg
 cv: 
 ---
+
+short bio
