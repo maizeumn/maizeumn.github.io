@@ -5,7 +5,7 @@ position: Principal Investigator
 handle: springer
 twitter: springernathan
 orcid: 
-calendar: https://calendar.google.com/calendar/embed?src=springer%40umn.edu&ctz=America%2FChicago
+calendar:
 github:
 linkedin:
 email: springer@umn.edu
