@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Subtle Perturbations of the Maize Methylome Reveal Genes and Transposons Silenced by Chromomethylase or RNA-Directed DNA Methylation Pathways"
-image: /images/publications/Anderson2018G3.jpg
+image: /images/publications/Anderson2018G3.jpeg
 authors: Anderson SN, Zynda G, Song J, Han Z, Vaughn M, Li Q, Springer NM
 year: 2018
 ref: Anderson et al. 2018. G3.
