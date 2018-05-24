@@ -3,7 +3,7 @@ layout: member
 title: Jaclyn Noshay
 position: PhD student
 handle: jackie
-twitter: @noshjac
+twitter: noshjac
 orcid: 0000-0002-7438-193X
 calendar: 
 github: noshjac
@@ -13,5 +13,3 @@ scholar: Jaclyn Noshay
 image: /images/people/jaclyn-noshay.jpg
 cv: 
 ---
-
-short bio
