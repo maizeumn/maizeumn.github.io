@@ -3,7 +3,7 @@ layout: member
 title: Sarah Anderson
 position: Postdoc
 handle: sarahanderson
-twitter: https://twitter.com/sna8
+twitter: sna8
 orcid: 0000-0002-1671-2286
 calendar: 
 github: 
