@@ -2,7 +2,7 @@
 layout: publication
 title: "Potential roles for transposable elements in creating imprinted expression"
 image: /images/publications/Anderson2018COGD.png
-authors: Sarah N Anderson, Nathan M Springer
+authors: Anderson SN, Springer NM
 year: 2018
 ref: Anderson and Springer 2018. Current Opinion in Genetics & Development.
 journal: Current Opinion in Genetics & Development
