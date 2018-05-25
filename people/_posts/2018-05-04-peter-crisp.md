@@ -20,7 +20,7 @@ The guiding paradigm for my research is understanding the contribution of epigen
 ## Research Program
 My researches focuses on DNA methylation, which is known to underlie epigenetic control of some traits and is often - but not universally - stably inherited in plants. There are many unanswered questions concerning the origin, inheritance, stability and functional relevance of epialleles in large crop genomes.  These questions are critical for a complete understanding of fundamental principles of genetics and will greatly affect the potential application and utility of epigenetic information for plant breeding and modern agriculture. 
 
-The three major research projects I am leading are:
+Current research projects include:
 
  1. **Characterizing unexpected inheritance patterns of DNA methylation in maize hybrids and their progeny**
  
