@@ -10,6 +10,9 @@ sass:
   sass_dir: ./_sass
   style: :compressed 
 
+plugins:
+  - jekyll-paginate
+
 exclude:
   - "*.class"
   - "*.cpp"
@@ -41,6 +44,9 @@ exclude:
   - "*.xml"
   - "Gemfile"
   - "Gemfile.lock"
+
+paginate_path: "/publications/page:num/"
+paginate: 5
 
 projects:
   - trvrb/coaltrace

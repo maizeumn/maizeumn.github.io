@@ -37,6 +37,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-paginate (1.1.0)
     jekyll-press (0.2.1)
       html_press (>= 0.8.2)
       jekyll
@@ -81,6 +82,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8)
+  jekyll-paginate
   jekyll-press (~> 0.2.1)
 
 BUNDLED WITH
