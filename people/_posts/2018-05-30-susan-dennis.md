@@ -6,7 +6,7 @@ handle: susan
 twitter:
 orcid: 
 calendar:
-github:
+github:regel008
 linkedin:
 email: 
 scholar: 
