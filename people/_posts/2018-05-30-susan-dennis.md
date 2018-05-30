@@ -8,7 +8,7 @@ orcid:
 calendar:
 github: regel008
 linkedin:
-email: 
+email: regel008@umn.edu
 scholar: 
 image: /images/people/susan-st-dennis.jpg
 cv: 
