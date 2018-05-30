@@ -10,6 +10,6 @@ github: regel008
 linkedin:
 email: 
 scholar: 
-image: /images/people/susan-st-dennis.jpg 
+image: /images/people/susan-st-dennis.jpg
 cv: 
 ---
