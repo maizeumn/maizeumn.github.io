@@ -48,7 +48,3 @@ exclude:
 paginate_path: "/publications/page:num/"
 paginate: 5
 
-projects:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT

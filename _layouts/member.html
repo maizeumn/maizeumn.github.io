@@ -136,17 +136,15 @@ layout: default
 		<div class="spacer"></div>
 		{% for paper in site.categories.publications %}
 		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
+		    <p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}
 
 		{% for project in site.categories.projects %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign projectsq = true %}
-				{% endif %}
-			{% endfor %}
+		{% if project.contributors contains member.title %}
+			{% assign projectsq = true %}
+		{% endif %}
 		{% endfor %}
 
 		{% if projectsq == true %}
@@ -156,12 +154,12 @@ layout: default
 		{% for project in site.categories.projects %}
 			{% assign present = false %}
 			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign present = true %}
+		        {% if project.contributors contains member.title %}
+				    {% assign present = true %}
 				{% endif %}
 			{% endfor %}
 			{% if present == true %}
-				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
+				<p><a href="{{ project.url }}" class="off">{{ project.title }}</a>
 			{% endif %}
 		{% endfor %}
 		{% endif %}
