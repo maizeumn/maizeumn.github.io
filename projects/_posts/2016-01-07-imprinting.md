@@ -4,7 +4,7 @@ title: Imprinted gene expression in maize
 description:
 contributors:
   - Sarah N Anderson
-image:/images/projects/gamete_fusion.png
+image: /images/projects/gamete_fusion.png
 link: 
 ---
 
