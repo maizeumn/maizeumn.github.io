@@ -6,6 +6,7 @@ link:
 contributors:
   - Tara Enders
   - Sara Tirado
+  - Susan St. Dennis
 image:
 ---
 
