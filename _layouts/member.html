@@ -1,30 +1,28 @@
 ---
 layout: default
 ---
-
 {% assign member = page %}
 
 <div class="bigspacer"></div>
 <div class="card">
-  <div class="row">
-    <div class="col-sm col-sm-auto pr-0">
-			{% if member.image %}
-			<img class="card-img-left" width=200 src="{{ member.image }}">
-			{% endif %}
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if member.image %}
+            <img class="card-img-left" width=200 src="{{ member.image }}">
+            {% endif %}
+        </div>
+        <div class="col-sm px-1">
+            <div class="card-body">
+            <div class="card-title bigtitle pull-right">{{ member.title }}</div>
+            <div class="card-subtitle smallhead mb-2 text-muted">{{ member.position }}</div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm px-0">
-      <div class="card-body">
-			    <div class="card-title bigtitle pull-right">{{ member.title }}</div>
-    			<div class="card-subtitle smallhead mb-2 text-muted">{{ member.position }}</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bigspacer"></div>
+    
+    <hr class='mt-0'>
 
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-3 ml-3">
 		{% if member.twitter %}
 		<div class="smallhead">
 			Twitter
@@ -120,27 +118,6 @@ layout: default
 			{{ content }}
 		</div>
 
-		{% assign lastname = member.title | split: ' ' | last %}
-		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
-		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
-
-		{% for paper in site.categories.publications %}
-		{% if paper.authors contains searchstring %}
-		{% assign papersq = true %}
-		{% endif %}
-		{% endfor %}
-
-		{% if papersq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Publications</div>
-		<div class="spacer"></div>
-		{% for paper in site.categories.publications %}
-		{% if paper.authors contains searchstring %}
-		    <p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
-		{% endif %}
-		{% endfor %}
-		{% endif %}
-
 		{% for project in site.categories.projects %}
 		{% if project.contributors contains member.title %}
 			{% assign projectsq = true %}
@@ -164,19 +141,23 @@ layout: default
 		{% endfor %}
 		{% endif %}
 
-		{% for post in site.categories.news %}
-		{% if member.title == post.author %}
-		{% assign postsq = true %}
+		{% assign lastname = member.title | split: ' ' | last %}
+		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
+		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+		{% for paper in site.categories.publications %}
+		{% if paper.authors contains searchstring %}
+		{% assign papersq = true %}
 		{% endif %}
 		{% endfor %}
 
-		{% if postsq == true %}
+		{% if papersq == true %}
 		<div class="bigspacer"></div>
-		<div class="head">Posts</div>
+		<div class="head">Publications</div>
 		<div class="spacer"></div>
-		{% for post in site.categories.news %}
-		{% if member.title == post.author %}
-		<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
+		{% for paper in site.categories.publications %}
+		{% if paper.authors contains searchstring %}
+		    <p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}
@@ -184,3 +165,6 @@ layout: default
 	</div>
 	<div class="col-md-1"></div>
 </div>
+</div>
+
+<div class="bigspacer"></div>

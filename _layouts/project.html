@@ -4,24 +4,24 @@ layout: default
 {% assign project = page %}
 
 <div class="bigspacer"></div>
+<div class="card">
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if project.image %}
+            <img class="card-img-left" width=300 src="{{ project.image }}">
+            {% endif %}
+        </div>
+        <div class="col-sm px-1">
+            <div class="card-body">
+                <div class="card-title bigtitle pull-right">{{ project.title }}</div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class='mt-0'>
 
 <div class="row">
-	<div class="col-md-auto">
-		<div class="bigtitle">
-			{{ project.title }}
-		</div>
-		<p>
-		<div class="head">
-			{{ project.description }}
-		</div>
-	</div>
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
-	<div class="col-md-3">
-		<div class="bigspacer"></div>
+	<div class="col-md-3 ml-3">
 		<div class="smallhead">
 			Contributors
 		</div>
@@ -51,3 +51,6 @@ layout: default
 	</div>
 	<div class="col-md-1"></div>
 </div>
+</div>
+
+<div class="bigspacer"></div>

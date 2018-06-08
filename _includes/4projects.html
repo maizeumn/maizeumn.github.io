@@ -26,13 +26,20 @@
             <p class="card-text">{{ project.description }}</p>
         </div>
         <div class="card-footer">
-            <small class="text-muted">
-                Updated by
-				<a class="text-secondary" href="{{ project.url }}">
-				{{ project.author }}
-				</a>
-            </small>
-        </div>
+			{% for contributor in project.contributors %}
+			{% assign name = contributor | downcase | strip %}
+                {% for member in site.categories.people %}
+                    {% assign mname = member.title | downcase | strip %}
+                    {% if name == mname %}
+                        {% assign url = member.url %}
+                    {% endif %}
+                {% endfor %}
+				<a class='small text-muted' href="{{ url }}">{{ contributor }}</a>
+				{%- if forloop.last != true -%}
+				    <small class='text-muted'>,</small>
+				{% endif %}
+ 			{% endfor %}
+ 		</div>
 	</div>
 	{% endfor %}
 </div>

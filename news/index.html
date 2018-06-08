@@ -44,9 +44,6 @@ category: news
 						<p>
 						<div class="smallhead">
 							{{ post.date | date: "%-d %b %Y" }}
-							{% if author %}
-							by <a class="text-muted" href="{{ author.url }}">{{ author.handle }}</a>
-							{% endif %}		
 						</div>
 					</div>
 				</div>
@@ -65,7 +62,7 @@ category: news
 					<img class="offset" src="{{ post.image }}">
 				</a>			
 				{% else %}
-				<img class="offset" src="{{ post.image }}">
+				<img width=200 src="{{ post.image }}">
 				{% endif %}				
 				{% endif %}
 				<div class="post">

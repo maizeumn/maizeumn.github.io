@@ -7,50 +7,38 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<div class="blog-post">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="media">
-				<div class="media-body">
-					<div class="title media-heading">
-						<a href="{{ page.url }}" class="text-dark">{{ page.title }}</a>
-					</div>
-					<p>
-					<div class="smallhead">
-						{{ page.date | date: "%-d %b %Y" }}
-						{% if author %}
-						by <a class="text-muted" href="{{ author.url }}">{{ author.handle }}</a>
-						{% endif %}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
+<div class="bigspacer"></div>
 
-	<div class="bigspacer"></div>
-
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			{% if page.image %}
-			{% if page.link %}
-			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}">
-			</a>
-			{% else %}
-			<img class="offset" src="{{ page.image }}">
-			{% endif %}
-			{% endif %}
-			<div class="post">
-				{{ content }}
-			</div>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
-
-	<div class="bigspacer"></div>
-	<div class="spacer"></div>
+<div class="card">
+    <div class="row">
+        <div class="col-sm col-sm-auto pr-0">
+            {% if page.image %}
+            <img class="card-img-left" width=300 src="{{ page.image }}">
+            {% endif %}
+        </div>
+    <div class="col-sm px-0">
+        <div class="card-body">
+            <div class="card-title title pull-right">{{ page.title }}</div>
+            <div class="card-subtitle smallhead mb-2 text-muted">
+                {{ page.date | date: "%-d %b %Y" }}
+            </div>
+        </div>
+    </div>
+    </div>
+  
+    <hr class='mt-0'>
+    
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <div class="post">
+                {{ content }}
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
 
 </div>
+
+<div class="bigspacer"></div>

@@ -17,7 +17,7 @@
     
     <div class="card">
         <a class="text-dark" href="{{ post.url }}">
-	{% if paper.image %}
+	{% if post.image %}
         <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
     {% else %}
         <img class="card-img-top" src="/images/null.png" alt="{{ post.title }}">
@@ -35,9 +35,6 @@
             <small class="text-muted">
         		Posted
 				{{ post.date | date: "%-d %b %Y" }}
-				{% if author %}
-				by <a class="text-secondary" href="{{ author.url }}">{{ author.title }}</a>
-				{% endif %}
             </small>
         </div>
 	</div>
