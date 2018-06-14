@@ -5,7 +5,7 @@ description:
 contributors:
   - Sarah N Anderson
   - Jaclyn Noshay
-image:
+image: /images/projects/TE_structural_variation.png
 link: 
 ---
 
