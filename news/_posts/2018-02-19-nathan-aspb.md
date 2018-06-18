@@ -2,7 +2,7 @@
 layout: post
 title: Nathan Springer Recieves Charles Albert Shull Award
 author: 
-image: /images/aspb.png
+image: /images/news/aspb.png
 link: https://aspb.org/awards-funding/aspb-awards/charles-albert-shull-award/
 ---
 

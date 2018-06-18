@@ -2,7 +2,7 @@
 layout: post
 title: Sara Tirado Receives Monsanto Fellowship
 author: 
-image: /images/monsanto.jpg
+image: /images/news/monsanto.jpg
 link: 
 ---
 
