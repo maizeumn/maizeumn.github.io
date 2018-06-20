@@ -5,6 +5,8 @@ position: Postdoc
 orcid: 0000-0002-9634-059X
 email: tenders@umn.edu
 handle: taraenders
+twitter: taraenders
+scholar: https://scholar.google.com/citations?hl=en&user=24HiyIoAAAAJ
 image: /images/people/tara-enders.jpg
 cv: /pdfs/people/tara-enders-cv.pdf
 ---
