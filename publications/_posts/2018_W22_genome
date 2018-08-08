@@ -1,0 +1,14 @@
+---
+layout: publication
+title: "The maize W22 genome provides a foundation for functional genomics and transposon biology"
+image: /images/publications/W22_not_curcos.jpeg
+authors: Nathan M. Springer, Sarah N. Anderson, Carson M. Andorf, Kevin R. Ahern, Fang Bai, Omer Barad, W. Brad Barbazuk, Hank W. Bass, Kobi Baruch, Gil Ben-Zvi, Edward S. Buckler, Robert Bukowski, Michael S. Campbell, Ethalinda K. S. Cannon, Paul Chomet, R. Kelly Dawe, Ruth Davenport, Hugo K. Dooner, Limei He Du, Chunguang Du, Katherine A. Easterling, Christine Gault, Jiahn-Chou Guan, Charles T. Hunter, Georg Jander, Yinping Jiao, Karen E. Koch, Guy Kol, Tobias G. Köllner, Toru Kudo, Qing Li, Fei Lu, Dustin Mayfield-Jones, Wenbin Mei, Donald R. McCarty, Jaclyn M. Noshay, John L. Portwood II, Gil Ronen, A. Mark Settles, Doron Shem-Tov, Jinghua Shi, Ilya Soifer, Joshua C. Stein, Michelle C. Stitzer, Masaharu Suzuki, Daniel L. Vera, Erik Vollbrecht, Julia T. Vrebalov, Doreen Ware, Sharon Wei, Kokulapalan Wimalanathan, Margaret R. Woodhouse, Wenwei Xiong & Thomas P. Brutnell
+year: 2018
+ref: Springer et al. 2018. Nature Genetics.
+journal: Nature Genetics
+pdf: 
+doi: 10.1038/s41588-018-0158-0
+supplement: 
+---
+
+The maize W22 inbred has served as a platform for maize genetics since the mid twentieth century. To streamline maize genome analyses, we have sequenced and de novo assembled a W22 reference genome using short-read sequencing technologies. We show that significant structural heterogeneity exists in comparison to the B73 reference genome at multiple scales, from transposon composition and copy number variation to single-nucleotide polymorphisms. The generation of this reference genome enables accurate placement of thousands of Mutator (Mu) and Dissociation (Ds) transposable element insertions for reverse and forward genetics studies. Annotation of the genome has been achieved using RNA-seq analysis, differential nuclease sensitivity profiling and bisulfite sequencing to map open reading frames, open chromatin sites and DNA methylation profiles, respectively. Collectively, the resources developed here integrate W22 as a community reference genome for functional genomics and provide a foundation for the maize pan-genome.
