@@ -9,7 +9,7 @@ calendar:
 github: 
 linkedin:
 email: sna@umn.edu
-scholar: https://scholar.google.com/citations?user=mlAcnHkAAAAJ&hl=en
+scholar: https://scholar.google.com/citations?user=https://scholar.google.com/citations?user=mlAcnHkAAAAJ&hl=en&user=f7FJ4UoAAAAJ
 image: /images/people/sarah-anderson.jpg
 cv: /pdfs/people/sarah-anderson-cv.pdf
 ---
