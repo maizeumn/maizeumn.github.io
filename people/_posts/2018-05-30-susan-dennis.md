@@ -12,4 +12,5 @@ email: regel008@umn.edu
 scholar: 
 image: /images/people/susan-st-dennis.jpg
 cv: 
+alumni: true
 ---
