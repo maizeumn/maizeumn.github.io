@@ -2,7 +2,7 @@
 layout: publication
 title: Dynamic Patterns of Gene Expression Additivity and Regulatory Variation throughout Maize Development
 image: /images/publications/zhou2018.png
-authors: Zhou, P., Hirsch, C. N., Briggs, S. P., Springer, N. M.
+authors: Zhou P, Hirsch CN, Briggs SP, Springer, NM
 year: 2018
 ref: Zhou et al. 2018. Molecular Plant.
 journal: Molecular Plant
