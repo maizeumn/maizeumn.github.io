@@ -7,7 +7,7 @@ year: 2019
 ref: Anderson et al. 2019. bioRxiv.
 journal: bioRxiv
 pdf: 
-doi: https://doi.org/10.1101/547398
+doi: 10.1101/547398
 supplement: 
 ---
 
