@@ -7,7 +7,7 @@ year: 2019
 ref: Crisp et al. 2019. Molecular Plant.
 journal: Molecular Plant
 pdf: 
-doi: https://doi.org/10.1016/j.molp.2019.02.006
+doi: 10.1016/j.molp.2019.02.006
 supplement: 
 ---
 
