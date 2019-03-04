@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Integrative genomics in maize
-description:
+description: 
 image: /images/projects/TRN.png
 contributors:
   - Peng Zhou
