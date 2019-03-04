@@ -4,7 +4,7 @@ title: Gene expression in hybrids and heterosis
 description: 
 contributors:
   - Peng Zhou
-image:
+image: /images/projects/heterosis.png
 link: 
 ---
 
