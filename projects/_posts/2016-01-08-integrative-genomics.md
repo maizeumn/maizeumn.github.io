@@ -2,7 +2,7 @@
 layout: project
 title: Integrative genomics in maize
 description:
-link: /images/projects/TRN.png
+image: /images/projects/TRN.png
 contributors:
   - Peng Zhou
   - Erika Magnusson
