@@ -4,9 +4,22 @@
     <p class="small text-secondary text-center mb-0 mt-1">{{ protocol.description }}</p>
   {% endif %}
   {% for url in protocol.urls %}
-  {% assign elements = url | split: "/" %}
+  {% assign parts = url | split: "/" %}
+  {% assign name_parts = parts.last | split: "." %}
+  {% assign ext = name_parts.last | downcase %}
   <a class="small text-center text-info mb-0 mt-1" href="{{ url }}">
-      <i class="fas fa-paperclip fa-md mx-1"></i>{{ elements.last }}
+      {% if ext == 'pdf' %}
+        <i class="fas fa-file-pdf fa-lg mx-1"></i>
+      {% elsif ext == 'doc' or ext == 'docx' %}
+        <i class="fas fa-file-word fa-lg mx-1"></i>
+      {% elsif ext == 'xls' or ext == 'xlsx' %}
+        <i class="fas fa-file-excel fa-lg mx-1"></i>
+      {% elsif ext == 'ppt' or ext == 'pptx' %}
+        <i class="fas fa-file-powerpoint fa-lg mx-1"></i>
+      {% else %}
+        <i class="fas fa-file fa-lg mx-1"></i>
+      {% endif %}
+      {{ parts.last }}
   </a>
   {% endfor %}
 </div>
