@@ -45,17 +45,6 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
-		{% if member.github %}
-		<div class="smallhead">
-			GitHub
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fab fa-github fa-fw"></i>
-			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
 		{% if member.scholar %}
 		<div class="smallhead">
 			Google Scholar
@@ -67,7 +56,18 @@ layout: default
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
-        {% if member.linkedin %}
+		{% if member.github %}
+		<div class="smallhead">
+			GitHub
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fab fa-github fa-fw"></i>
+			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+    {% if member.linkedin %}
 		<div class="smallhead">
 			Linkedin
 		</div>
@@ -109,6 +109,17 @@ layout: default
 			<div class="smallspacer"></div>
 			<i class="ai ai-cv ai-fw"></i>
 			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.website %}
+		<div class="smallhead">
+			Website
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fas fa-globe fa-fw"></i>
+			<a class="off" href="{{ member.website }}">{{ member.website }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
