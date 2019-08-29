@@ -44,52 +44,57 @@ categories:
                         <img class="card-img-top" src="/images/null.png">
                     {% endif %}
                 </a>
- 			 	<div class="card-body">
+ 			 	<div class="card-body text-dark">
     				<h5 class="card-title"><a href="{{ member.url }}" class="text-dark">{{ member.title }}</a></h5>
     				<h6 class="card-subtitle mb-2 text-muted">{{ member.position }}</h6>
-		
+
 		{% if member.twitter %}
-			<a title="Twitter" class='text-dark' href="https://twitter.com/{{ member.twitter }}">
+			<a title="Twitter" class="text-dark" href="https://twitter.com/{{ member.twitter }}">
 			    <i class="fab fa-twitter fa-fw"></i>
 			</a>
 		{% endif %}
 		{% if member.orcid %}
-			<a title="ORCID" class='text-dark' href="https://orcid.org/{{ member.orcid }}">
+			<a title="ORCID" class="text-dark" href="https://orcid.org/{{ member.orcid }}">
 			    <i class="ai ai-orcid ai-fw"></i>
 			</a>
 		{% endif %}
-		{% if member.github %}
-			<a title="Github" class='text-dark' href="https://github.com/{{ member.github }}">
-			    <i class="fab fa-github fa-fw"></i>
-			</a>
-		{% endif %}
 		{% if member.scholar %}
-			<a title="Google Scholar" class='text-dark' href="http://scholar.google.com/citations?user={{ member.scholar }}">
+			<a title="Google Scholar" class="text-dark" href="http://scholar.google.com/citations?user={{ member.scholar }}">
 			    <i class="ai ai-google-scholar fa-fw"></i>
 			</a>
 		{% endif %}
-        {% if member.linkedin %}
-			<a title="Linkedin" class='text-dark' href="https://www.linkedin.com/in/{{ member.linkedin }}">
+		{% if member.github %}
+			<a title="Github" class="text-dark" href="https://github.com/{{ member.github }}">
+			    <i class="fab fa-github fa-fw"></i>
+			</a>
+		{% endif %}
+    {% if member.linkedin %}
+			<a title="Linkedin" class="text-dark" href="https://www.linkedin.com/in/{{ member.linkedin }}">
 			    <i class="fab fa-linkedin-in fa-fw"></i>
 			</a>
 		{% endif %}
 		{% if member.calendar %}
-			<a title='Calendar' class='text-dark' href="{{ member.calendar }}">
+			<a title='Calendar' class="text-dark" href="{{ member.calendar }}">
 			    <i class="fas fa-calendar-alt fa-fw"></i>
 			</a>
 		{% endif %}
 		{% if member.email %}
 		{% assign emailarray = member.email | split: '@' %}
-			<a title='Email' class='text-dark' href="mailto:{{ member.email }}">
+			<a title='Email' class="text-dark" href="mailto:{{ member.email }}">
 			    <i class="fas fa-envelope fa-fw"></i>
 			</a>
 		{% endif %}
 		{% if member.cv %}
-			<a title="CV" class='text-dark' href="{{ member.cv }}">
+			<a title="CV" class="text-dark" href="{{ member.cv }}">
 			    <i class="ai ai-cv ai-fw"></i>
 			</a>
 		{% endif %}
-    				
+		{% if member.website %}
+			<a title="website" class="text-dark" href="{{ member.website }}">
+			    <i class="fas fa-globe fa-fw"></i>
+			</a>
+		{% endif %}
+
   				</div>
 			</div>
         </div>
