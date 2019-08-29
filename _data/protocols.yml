@@ -1,0 +1,37 @@
+-
+  name: DNA Isolation
+  description: DNA isolation and purification
+  urls:
+    - /pdfs/protocols/DNA_isolation.docx
+-
+  name: DNA Sonication
+  description: sonication of DNA
+  urls:
+    - /pdfs/protocols/DNA_sonication.docx
+-
+  name: Methylated-DNA IP
+  description: methylated-DNA immunoprecipitation
+  urls:
+    - /pdfs/protocols/Methylated_DNA_IP.pdf
+-
+  name: Whole Genome Amplification
+  description: GenomePlex complete whole genome amplification Kit
+  urls:
+    - /pdfs/protocols/wga2bul.pdf
+-
+  name: NimbleGen Methylation Array
+  description: NimbleGen methylation array user guide
+  urls:
+    - /pdfs/protocols/NimbleGen_Methy_Array.pdf
+-
+  name: RNA Extration
+  description: RNA extraction using RNeasy Plant Mini Kit
+  urls:
+    - /pdfs/protocols/RNA_extraction.docx
+-
+  name: DNA/RNA Quantification
+  description: quantification of dsDNA/ssRNA using TECAN
+  urls:
+    - /pdfs/protocols/DNA_RNA_quantification/protocol.docx
+    - /pdfs/protocols/DNA_RNA_quantification/template.xlsx
+

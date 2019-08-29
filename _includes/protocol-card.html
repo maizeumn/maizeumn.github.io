@@ -1,0 +1,12 @@
+<div class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-3">
+  <p class="h5 lh-condensed text-center mb-0 mt-1">{{ protocol.name }}</p>
+  {% if protocol.description %}
+    <p class="small text-secondary text-center mb-0 mt-1">{{ protocol.description }}</p>
+  {% endif %}
+  {% for url in protocol.urls %}
+  {% assign elements = url | split: "/" %}
+  <a class="small text-center text-info mb-0 mt-1" href="{{ url }}">
+      <i class="fas fa-paperclip fa-md mx-1"></i>{{ elements.last }}
+  </a>
+  {% endfor %}
+</div>
