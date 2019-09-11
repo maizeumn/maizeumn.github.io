@@ -4,10 +4,10 @@ title: "Dynamic patterns of transcript abundance of transposable element familie
 image: /images/publications/Anderson2019TE_exp.png
 authors: Anderson SN, Stitzer MC, Zhou P, Ross-Ibarra J, Hirsch CD, Springer NM
 year: 2019
-ref: Anderson et al. 2019. bioRxiv.
-journal: bioRxiv
+ref: Anderson et al. 2019. G3.
+journal: G3
 pdf: 
-doi: 10.1101/668558
+doi: 10.1534/g3.119.400431
 supplement: 
 ---
 
