@@ -9,6 +9,7 @@ twitter: taraenders
 scholar: https://scholar.google.com/citations?hl=en&user=24HiyIoAAAAJ
 image: /images/people/tara-enders.jpg
 cv: /pdfs/people/tara-enders-cv.pdf
+alumni: true
 ---
 
 My research experiences have been quite broad, from dissecting signaling pathways in Arabidopsis to understanding whole plant phenotypes to abiotic stress in maize. However, all of my work generally involves studying how plant respond to their environment.
