@@ -7,6 +7,7 @@ contributors:
   - Tara Enders
   - Sara Tirado
   - Susan St. Dennis
+  - Peng Zhou
 image: /images/projects/drought.jpg
 ---
 
