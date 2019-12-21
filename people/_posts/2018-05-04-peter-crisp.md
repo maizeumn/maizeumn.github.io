@@ -12,6 +12,7 @@ email: pcrisp@umn.edu
 scholar: BAVfSlIAAAAJ
 image: /images/people/peter-crisp.jpg
 cv: /pdfs/people/peter-crisp-cv.pdf
+alumni: false
 ---
 
 ## Epigenomics in crops

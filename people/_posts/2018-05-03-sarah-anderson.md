@@ -12,6 +12,7 @@ email: sna@umn.edu
 scholar: https://scholar.google.com/citations?user=https://scholar.google.com/citations?user=mlAcnHkAAAAJ&hl=en&user=f7FJ4UoAAAAJ
 image: /images/people/sarah-anderson.jpg
 cv: /pdfs/people/sarah-anderson-cv.pdf
+alumni: true
 ---
 A spectacular array of phenotypic variation exists in nature resulting from a combination of genetic, epigenetic, and environmental influences. My work aims to understand the genetic contribution to this diversity by moving beyond SNPs to understand how variation in transposable elements (TEs) contribute to a dynamic genome and transcriptome. Transposable elements contribute a large amount of DNA sequences to genomes and are a major source of genetic variation within species, particularly within large genomes. Most TE insertions are deleterious or at best neutral, but TEs are distinct from other common mutation types (SNPs and indels) in that they can introduce regulatory elements and alter the chromatin state of a region upon transposition. This means that TEs have a unique potential to create beneficial alleles and novel regulatory networks by altering expression of nearby genes.
 
