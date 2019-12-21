@@ -4,7 +4,7 @@ title: "Challenges of Translating Gene Regulatory Information into Agronomic Imp
 image: /images/publications/20190731_TIPS.jpg
 authors: Springer NM, de León N, Grotewold E
 year: 2019
-ref: Springer et al. 2019, Trends in Plant Science.
+ref: Springer et al. 2019. Trends in Plant Science.
 journal: Trends in Plant Science
 pdf: 
 doi: 10.1016/j.tplants.2019.07.004
