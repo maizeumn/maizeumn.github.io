@@ -4,12 +4,13 @@ title: Sara Tirado
 position: PhD student
 handle: saratirado
 twitter:
-orcid: 
-calendar: 
+orcid:
+calendar:
 github:
 linkedin:
 email: tirad014@umn.edu
-scholar: 
+scholar:
 image: /images/people/sara-tirado.jpg
-cv: 
+cv:
+alumni: true
 ---
