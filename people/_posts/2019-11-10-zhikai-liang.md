@@ -13,4 +13,4 @@ scholar: DcoiZmMAAAAJ
 image: /images/people/zhikai-liang.jpg
 cv: /pdfs/people/zhikai-liang-cv.pdf
 ---
-I am currently working on Transposable Element (TE) variation in diverse maize inbreds. 
+I am working on Transposable Element (TE) variations in different maize inbreds.
