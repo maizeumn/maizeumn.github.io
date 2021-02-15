@@ -2,7 +2,7 @@
 layout: post
 title: Nathan Springer Names AAAS Fellow
 author:
-image: /images/news/aaas.png
+image: /images/news/AAASFellow.png
 link: https://cbs.umn.edu/blogs/cbs-connect/three-cbs-faculty-members-named-aaas-fellows
 ---
 
