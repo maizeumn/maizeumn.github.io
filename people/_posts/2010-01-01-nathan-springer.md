@@ -11,7 +11,7 @@ linkedin:
 email: springer@umn.edu
 scholar: 11RguYAAAAAJ
 image: /images/people/nathan-springer.jpg
-cv: /pdfs/people/nathan-springer-cv.pdf
+cv: 
 ---
 
 As a geneticist, I seek to understand the basis for heritable variation within a species. My group uses a combination of classical genetics, molecular genetics and genomics approaches to study molecular variation and inheritance in maize. Maize is one of the most important crop plants and also provides a strong model system for studying genetic variation. The maize genome is has a complex organization of genes and transposons and has high levels of variation among different individuals.
