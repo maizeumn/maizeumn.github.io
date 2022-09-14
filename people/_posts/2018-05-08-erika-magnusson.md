@@ -2,7 +2,7 @@
 layout: member
 title: Erika Magnusson
 position: PhD candidate
-handle: erika
+handle: Erika
 twitter: erikalanemag
 orcid: 0000-0001-7868-6215
 calendar: 
