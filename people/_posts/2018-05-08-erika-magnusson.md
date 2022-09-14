@@ -3,8 +3,8 @@ layout: member
 title: Erika Magnusson
 position: PhD student
 handle: erika
-twitter:
-orcid: 
+twitter: erikalanemag
+orcid: 0000-0001-7868-6215
 calendar: 
 github:
 linkedin:
